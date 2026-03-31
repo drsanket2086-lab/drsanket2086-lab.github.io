@@ -8,10 +8,14 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap');
-        body { font-family: 'Plus+Jakarta+Sans', sans-serif; background-color: #f0fdfa; }
+        body { 
+            font-family: 'Plus+Jakarta+Sans', sans-serif;
+            background-color: #f0fdfa;
+            background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%230d9488' fill-opacity='0.1'%3E%3Cpath d='M50 50c0-11.046-8.954-20-20-20S10 38.954 10 50s8.954 20 20 20 20-8.954 20-20zm40 0c0-11.046-8.954-20-20-20s-20 8.954-20 20 8.954 20 20 20 20-8.954 20-20z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
         .hero-gradient { background: linear-gradient(135deg, #042f2e 0%, #0d9488 100%); }
-        .glass-card { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border: 1px solid rgba(13, 148, 136, 0.2); border-radius: 2.5rem; }
-        .map-container iframe { width: 100%; height: 300px; border-radius: 1.5rem; border: 4px solid white; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+        .glass-card { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border: 1px solid rgba(13, 148, 136, 0.2); border-radius: 3rem; }
+        .map-mini { width: 100%; height: 150px; border-radius: 1.5rem; margin-top: 1rem; border: 2px solid #e2e8f0; }
     </style>
 </head>
 <body class="text-slate-900 pb-20">
@@ -19,20 +23,18 @@
     <header class="hero-gradient text-white py-16 px-6 rounded-b-[4rem] shadow-2xl relative overflow-hidden">
         <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-12 items-center relative z-10 text-center md:text-left">
             <div class="md:col-span-2">
-                <div class="inline-block bg-yellow-400/20 text-yellow-400 px-4 py-1 rounded-full text-xs font-bold uppercase mb-6 border border-yellow-400/30">🏅 Gold Medalist</div>
-                <h1 class="text-6xl md:text-8xl font-extrabold tracking-tighter mb-4">Dr. Sanket Shah</h1>
+                <div class="inline-block bg-yellow-400/20 text-yellow-400 px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest mb-6">🏅 Gold Medalist</div>
+                <h1 class="text-5xl md:text-8xl font-extrabold tracking-tighter mb-4">Dr. Sanket Shah</h1>
                 <p class="text-xl md:text-2xl font-light text-emerald-100 mb-8 leading-relaxed">
                     Trained at <span class="font-bold text-white underline">MSKCC (New York)</span> & <span class="font-bold text-white underline">Tata Medical Centre (Kolkata)</span>
                 </p>
-                <div class="flex flex-wrap gap-3 opacity-70 text-xs font-semibold">
-                    <span class="bg-white/10 px-3 py-1 rounded-lg italic">Vanderbilt Univ.</span>
-                    <span class="bg-white/10 px-3 py-1 rounded-lg italic">Univ. of Wisconsin</span>
-                    <span class="bg-white/10 px-3 py-1 rounded-lg italic">GCRI Ahmedabad</span>
+                <div class="flex flex-wrap justify-center md:justify-start gap-4 opacity-70 text-xs font-semibold">
+                    <span>• Vanderbilt Univ.</span><span>• Univ. of Wisconsin</span><span>• GCRI Ahmedabad</span>
                 </div>
             </div>
             <div class="flex justify-center">
-                <div class="w-72 h-72 rounded-[3.5rem] border-8 border-white/10 overflow-hidden shadow-2xl bg-emerald-900/50 flex items-center justify-center">
-                    <i class="fas fa-user-md text-9xl opacity-20"></i>
+                <div class="w-64 h-64 rounded-[3rem] border-8 border-white/10 overflow-hidden shadow-2xl bg-emerald-900/50 flex items-center justify-center">
+                    <img src="http://googleusercontent.com/image_collection/image_retrieval/9301103996735728631_0" class="w-full h-full object-cover">
                 </div>
             </div>
         </div>
@@ -40,67 +42,86 @@
 
     <main class="max-w-6xl mx-auto px-6 -mt-16">
         
+        <div class="grid md:grid-cols-2 gap-8 mb-20">
+            <div class="glass-card p-10 shadow-xl border-b-8 border-emerald-500">
+                <i class="fas fa-ribbon text-emerald-700 text-2xl mb-6"></i>
+                <h3 class="text-2xl font-black text-emerald-950 uppercase mb-4 tracking-tighter italic">Cancer & Blood Disorders</h3>
+                <p class="text-slate-600 font-medium leading-relaxed">Precision management for Leukaemia, Lymphoma, Myeloma, and all Solid Tumors using Targeted & Immunotherapy.</p>
+            </div>
+            <div class="glass-card p-10 shadow-xl border-b-8 border-blue-600">
+                <i class="fas fa-microscope text-blue-700 text-2xl mb-6"></i>
+                <h3 class="text-2xl font-black text-slate-950 uppercase mb-4 tracking-tighter italic">Advanced Cellular Therapy</h3>
+                <p class="text-slate-600 font-medium leading-relaxed">Specialized focus on Bone Marrow Transplantation (BMT), CAR-T Cell Therapy, and Innovative Gene Therapies.</p>
+            </div>
+        </div>
+
         <div class="mb-20">
-            <h2 class="text-center text-3xl font-black text-emerald-950 uppercase mb-10 tracking-widest">Knowledge Hub</h2>
+            <h2 class="text-center text-3xl font-black text-emerald-950 uppercase mb-12 tracking-widest underline decoration-yellow-400">HOC Consultation Hubs</h2>
             <div class="grid md:grid-cols-2 gap-8">
-                <div class="glass-card p-4 shadow-xl">
-                    <div class="aspect-video rounded-3xl overflow-hidden mb-4">
-                        <iframe class="w-full h-full" src="https://www.youtube.com/embed/RoddPPMqdBE" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                    <h4 class="font-bold text-lg px-2">What is Blood Cancer? Types & Detection</h4>
+                <div class="bg-white p-8 rounded-[3rem] shadow-lg border border-slate-100 flex flex-col items-center">
+                    <h4 class="font-black text-2xl text-emerald-900 uppercase">HOC Bopal</h4>
+                    <p class="text-emerald-600 font-bold mb-4">10:00 AM — 2:00 PM</p>
+                    <a href="tel:+917069001072" class="bg-emerald-700 text-white px-8 py-3 rounded-xl font-black w-full text-center shadow-md mb-4">Call 7069001072</a>
+                    <iframe class="map-mini" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.936662057375!2d72.4571617!3d23.026105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e9b99099c2d7b%3A0xe67198791090333!2sHemato%20Oncology%20Clinic%20(HOC)%20Bopal!5e0!3m2!1sen!2sin!4v1710000000000" allowfullscreen="" loading="lazy"></iframe>
                 </div>
-                <div class="glass-card p-10 flex flex-col justify-center items-center text-center bg-emerald-950 text-white">
-                    <i class="fab fa-youtube text-5xl text-red-500 mb-4"></i>
-                    <h3 class="text-xl font-bold mb-4 uppercase">More on Hemato Oncology Clinic Website</h3>
-                    <a href="https://www.hematooncologyclinic.com" target="_blank" class="bg-white text-emerald-950 px-6 py-2 rounded-xl font-bold text-sm">Visit Website</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="mb-20">
-            <h2 class="text-center text-3xl font-black text-emerald-950 uppercase mb-12 tracking-widest">Our Clinics</h2>
-            <div class="grid md:grid-cols-2 gap-12">
-                <div class="flex flex-col">
-                    <div class="map-container mb-6">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.548483259837!2d72.4491763!3d23.0036111!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e9b8979119f9d%3A0x6d2d1f7c8f8b8f8b!2sHOC%20Vedanta%20Bopal!5e0!3m2!1sen!2sin!4v1711920000000" allowfullscreen="" loading="lazy"></iframe>
-                    </div>
-                    <h3 class="font-black text-2xl text-emerald-900 mb-1">HOC Bopal</h3>
-                    <p class="text-slate-500 font-bold mb-4">10:00 AM — 2:00 PM</p>
-                    <a href="tel:+917069001072" class="bg-emerald-700 text-white text-center py-4 rounded-2xl font-black shadow-lg">Call Clinic</a>
-                </div>
-                <div class="flex flex-col">
-                    <div class="map-container mb-6">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.696!2d72.556!3d23.038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e84f5!2sHemato%20Oncology%20Clinic%20Navrangpura!5e0!3m2!1sen!2sin!4v1711920000000" allowfullscreen="" loading="lazy"></iframe>
-                    </div>
-                    <h3 class="font-black text-2xl text-slate-900 mb-1">HOC Navrangpura</h3>
+                <div class="bg-white p-8 rounded-[3rem] shadow-lg border border-slate-100 flex flex-col items-center">
+                    <h4 class="font-black text-2xl text-slate-900 uppercase">HOC Navrangpura</h4>
                     <p class="text-slate-500 font-bold mb-4">4:00 PM — 7:00 PM</p>
-                    <a href="tel:+919099007706" class="bg-slate-900 text-white text-center py-4 rounded-2xl font-black shadow-lg">Call Clinic</a>
+                    <a href="tel:+919099007706" class="bg-slate-900 text-white px-8 py-3 rounded-xl font-black w-full text-center shadow-md mb-4">Call 9099007706</a>
+                    <iframe class="map-mini" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.5834241775796!2d72.5615714!3d23.0390554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e848aba5bd449%3A0x4f607d1fd8100707!2sHemato%20Oncology%20Clinic%20(HOC)!5e0!3m2!1sen!2sin!4v1710000000001" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+
+        <div class="glass-card p-10 mb-20">
+            <h3 class="font-black text-xl mb-4 uppercase text-emerald-900">Professional Affiliations</h3>
+            <p class="text-slate-700 leading-relaxed italic text-lg">
+                Part of <span class="font-bold text-emerald-800">HOC</span>, Dr. Sanket is affiliated with various leading Private and Government Institutions, ensuring comprehensive care networks for his patients.
+            </p>
+        </div>
+
+        <div class="bg-emerald-950 text-white p-12 rounded-[4rem] shadow-2xl mb-20 text-center relative overflow-hidden">
+            <h2 class="text-4xl font-black mb-4 uppercase text-yellow-400">Knowledge Hub</h2>
+            <p class="text-emerald-100 mb-10 opacity-80">Empowering patients through information. Ever evolving.</p>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="rounded-3xl overflow-hidden border-4 border-white/10 shadow-2xl aspect-video">
+                    <iframe class="w-full h-full" src="https://www.youtube.com/embed/RoddPPMqdBE" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="flex flex-col justify-center items-center p-6 border-2 border-dashed border-white/20 rounded-3xl">
+                    <i class="fab fa-youtube text-6xl text-red-500 mb-4"></i>
+                    <p class="font-bold uppercase tracking-widest text-sm">More Videos Coming Soon</p>
                 </div>
             </div>
         </div>
 
         <div class="mb-20">
-            <h2 class="text-center text-3xl font-black text-emerald-950 uppercase mb-12 tracking-widest">Patient Reviews</h2>
+            <h2 class="text-center text-3xl font-black text-emerald-950 uppercase mb-12 tracking-widest">Hear From Our Patients</h2>
             <div class="grid md:grid-cols-3 gap-6">
-                <div class="glass-card p-8 italic text-slate-700 text-sm leading-relaxed">
-                    "Dr. Shah carefully reviewed all my reports and suggested targeted therapy. He explained the benefits and risks honestly. I am thankful for his expertise."
-                    <div class="mt-4 font-bold text-emerald-800 not-italic">— Komal Shah</div>
+                <div class="bg-white p-8 rounded-[2.5rem] shadow-md border-t-4 border-emerald-500">
+                    <p class="italic text-slate-600 text-sm mb-4">"Dr. Shah carefully reviewed all my reports and suggested targeted therapy. He explained the benefits honestly. Grateful for his expertise."</p>
+                    <div class="font-black text-emerald-900 text-xs uppercase tracking-widest">— Komal Shah</div>
                 </div>
-                <div class="glass-card p-8 italic text-slate-700 text-sm leading-relaxed">
-                    "His personalized approach made the journey easier. He explained everything clearly and gave us confidence during my mother's treatment."
-                    <div class="mt-4 font-bold text-emerald-800 not-italic">— Neha Shah</div>
+                <div class="bg-white p-8 rounded-[2.5rem] shadow-md border-t-4 border-emerald-500">
+                    <p class="italic text-slate-600 text-sm mb-4">"His personalized approach made the journey easier. He gave us confidence during my mother's treatment."</p>
+                    <div class="font-black text-emerald-900 text-xs uppercase tracking-widest">— Neha Shah</div>
                 </div>
-                <div class="glass-card p-8 italic text-slate-700 text-sm leading-relaxed border-l-4 border-emerald-500">
-                    "Dr. Sanket listens patiently and answers every question. He gave honest advice and proper treatment. Grateful for his support."
-                    <div class="mt-4 font-bold text-emerald-800 not-italic">— Mehul Desai</div>
+                <div class="bg-white p-8 rounded-[2.5rem] shadow-md border-t-4 border-emerald-500">
+                    <p class="italic text-slate-600 text-sm mb-4">"Dr. Sanket listens patiently and answers every question. He gave honest advice and proper treatment."</p>
+                    <div class="font-black text-emerald-900 text-xs uppercase tracking-widest">— Mehul Desai</div>
                 </div>
             </div>
         </div>
+
+        <section class="text-center py-10">
+            <h3 class="text-2xl md:text-3xl font-bold text-emerald-950 italic leading-snug">
+                "Cancer care is not just about drugs; it's about caring for the patient as well as the family at each step of their journey."
+            </h3>
+        </section>
 
     </main>
 
-    <footer class="text-center py-10 opacity-40 font-bold uppercase tracking-widest text-xs">
-        HOC Bopal • HOC Navrangpura • Ahmedabad
+    <footer class="text-center py-10 border-t border-emerald-100 text-emerald-900 opacity-40 font-bold text-xs uppercase tracking-[0.3em]">
+        Dr. Sanket Shah • HOC • Ahmedabad
     </footer>
 
 </body>
