@@ -3,80 +3,125 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dr. Sanket Shah | Oncology & BMT Specialist</title>
+    <title>Dr. Sanket Shah | Gold Medalist Oncologist & BMT Specialist</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
-        .glass { background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.2); }
-        .hero-bg { 
-            background: linear-gradient(rgba(0, 51, 51, 0.8), rgba(0, 51, 51, 0.8)), 
-            url('https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&q=80&w=1600');
-            background-size: cover; background-position: center;
-        }
-        .gold-text { background: linear-gradient(to right, #bf953f, #fcf6ba, #b38728); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap');
+        body { font-family: 'Plus+Jakarta+Sans', sans-serif; scroll-behavior: smooth; }
+        .glass { background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(12px); border: 1px solid rgba(255,255,255,0.2); }
+        .hero-gradient { background: linear-gradient(135deg, #022c2c 0%, #064e3b 100%); }
+        .gold-glow { box-shadow: 0 0 20px rgba(212, 175, 55, 0.3); border: 1px solid #d4af37; }
+        .gradient-text { background: linear-gradient(to right, #10b981, #3b82f6); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
     </style>
 </head>
-<body class="bg-gray-100 font-sans text-gray-900">
+<body class="bg-slate-50">
 
-    <section class="hero-bg text-white py-16 px-6 text-center shadow-2xl">
-        <div class="max-w-4xl mx-auto">
-            <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight mb-2">Dr. Sanket Shah</h1>
-            <p class="text-xl md:text-2xl font-light text-teal-100 mb-4">Medical Oncologist & BMT Specialist</p>
-            <div class="inline-flex items-center bg-white/10 px-4 py-2 rounded-full border border-white/20 backdrop-blur-md">
-                <span class="text-yellow-400 mr-2">★</span>
-                <span class="text-sm font-semibold tracking-wide uppercase">Gold Medalist (Medical Oncology)</span>
+    <header class="hero-gradient text-white pt-20 pb-32 px-6 text-center relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-full h-full opacity-10 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')]"></div>
+        <div class="max-w-4xl mx-auto relative z-10">
+            <div class="inline-flex items-center space-x-2 bg-yellow-400/20 text-yellow-400 px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest mb-6 border border-yellow-400/30">
+                <i class="fas fa-medal"></i> <span>Gold Medalist (GCRI Ahmedabad)</span>
+            </div>
+            <h1 class="text-5xl md:text-7xl font-extrabold mb-4 tracking-tight">Dr. Sanket Shah</h1>
+            <p class="text-xl md:text-2xl font-light text-emerald-100/80 mb-8 italic">"Cancer care is about the family's journey, not just the drugs."</p>
+            
+            <div class="flex flex-wrap justify-center gap-3 text-xs font-semibold">
+                <span class="bg-white/10 px-3 py-1 rounded-md border border-white/10">MSKCC (NY)</span>
+                <span class="bg-white/10 px-3 py-1 rounded-md border border-white/10">Vanderbilt Univ.</span>
+                <span class="bg-white/10 px-3 py-1 rounded-md border border-white/10">Univ. of Wisconsin</span>
+                <span class="bg-white/10 px-3 py-1 rounded-md border border-white/10">TMC Kolkata</span>
             </div>
         </div>
-    </section>
+    </header>
 
-    <main class="max-w-5xl mx-auto -mt-10 px-6 pb-20">
+    <main class="max-w-6xl mx-auto px-6 -mt-16">
         
-        <div class="grid grid-cols-2 gap-4 mb-10">
-            <a href="tel:+919099007706" class="flex flex-col items-center justify-center bg-teal-700 text-white p-6 rounded-2xl shadow-xl hover:bg-teal-800 transition-all active:scale-95">
-                <i class="fas fa-phone-alt text-2xl mb-2"></i>
-                <span class="font-bold">Call Clinic</span>
-            </a>
-            <a href="https://wa.me/919099007706" class="flex flex-col items-center justify-center bg-green-600 text-white p-6 rounded-2xl shadow-xl hover:bg-green-700 transition-all active:scale-95">
-                <i class="fab fa-whatsapp text-2xl mb-2"></i>
-                <span class="font-bold">WhatsApp</span>
-            </a>
+        <div class="grid md:grid-cols-2 gap-6 mb-16">
+            <div class="glass p-8 rounded-[2.5rem] shadow-2xl relative overflow-hidden group">
+                <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+                    <i class="fas fa-sun text-6xl text-emerald-900"></i>
+                </div>
+                <h3 class="text-emerald-900 font-black text-2xl mb-1 uppercase tracking-tighter">Bopal Clinic</h3>
+                <p class="text-slate-500 font-bold text-sm mb-4">10:00 AM — 2:00 PM</p>
+                <div class="flex flex-col space-y-3">
+                    <a href="tel:+917069001072" class="w-full bg-emerald-700 text-white text-center py-4 rounded-2xl font-bold hover:bg-emerald-800 transition-all flex items-center justify-center space-x-2">
+                        <i class="fas fa-phone-alt text-sm"></i> <span>Call 7069001072</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="glass p-8 rounded-[2.5rem] shadow-2xl relative overflow-hidden group">
+                <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+                    <i class="fas fa-moon text-6xl text-blue-900"></i>
+                </div>
+                <h3 class="text-blue-900 font-black text-2xl mb-1 uppercase tracking-tighter">Navrangpura Clinic</h3>
+                <p class="text-slate-500 font-bold text-sm mb-4">4:00 PM — 7:00 PM</p>
+                <div class="flex flex-col space-y-3">
+                    <a href="tel:+919099007706" class="w-full bg-blue-800 text-white text-center py-4 rounded-2xl font-bold hover:bg-blue-900 transition-all flex items-center justify-center space-x-2">
+                        <i class="fas fa-phone-alt text-sm"></i> <span>Call 9099007706</span>
+                    </a>
+                </div>
+            </div>
         </div>
 
-        <div class="grid md:grid-cols-2 gap-8 mb-12">
-            <div class="glass p-8 rounded-3xl shadow-lg">
-                <div class="w-12 h-12 bg-teal-100 rounded-xl flex items-center justify-center mb-4">
-                    <i class="fas fa-ribbon text-teal-700 text-xl"></i>
-                </div>
-                <h2 class="text-2xl font-bold text-gray-800 mb-3">Oncology Care</h2>
-                <p class="text-gray-600 leading-relaxed">Advanced Chemotherapy, Targeted Therapy, and Immunotherapy for comprehensive cancer management.</p>
+        <section class="mb-20">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-black text-slate-900 uppercase">Expertise & Specializations</h2>
+                <div class="h-1.5 w-24 bg-emerald-500 mx-auto mt-4 rounded-full"></div>
             </div>
-            <div class="glass p-8 rounded-3xl shadow-lg">
-                <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-4">
-                    <i class="fas fa-microscope text-blue-700 text-xl"></i>
-                </div>
-                <h2 class="text-2xl font-bold text-gray-800 mb-3">BMT & Cellular Therapy</h2>
-                <p class="text-gray-600 leading-relaxed">Specializing in Autologous and Allogeneic Bone Marrow Transplants and CAR-T Cell procedures.</p>
-            </div>
-        </div>
 
-        <h3 class="text-2xl font-bold text-gray-800 mb-6 text-center italic">Consultation Centers</h3>
-        <div class="grid md:grid-cols-2 gap-6">
-            <div class="bg-white p-6 rounded-2xl shadow-sm border-l-8 border-teal-600">
-                <h4 class="font-bold text-xl text-teal-800 mb-1">Ahmedabad (Bopal)</h4>
-                <p class="text-gray-500 mb-3"><i class="fas fa-clock mr-2"></i>4:00 PM - 7:00 PM</p>
-                <button class="text-sm font-bold text-teal-600 uppercase tracking-widest">Get Directions →</button>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow">
+                    <div class="w-12 h-12 bg-emerald-50 text-emerald-600 rounded-xl flex items-center justify-center mb-6 text-xl">
+                        <i class="fas fa-shield-virus"></i>
+                    </div>
+                    <h4 class="font-extrabold text-xl mb-4">Solid Oncology</h4>
+                    <ul class="text-slate-600 space-y-3 text-sm">
+                        <li><i class="fas fa-check text-emerald-500 mr-2"></i>Targeted Therapy</li>
+                        <li><i class="fas fa-check text-emerald-500 mr-2"></i>Modern Immunotherapy</li>
+                        <li><i class="fas fa-check text-emerald-500 mr-2"></i>Precision Chemotherapy</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow">
+                    <div class="w-12 h-12 bg-blue-50 text-blue-600 rounded-xl flex items-center justify-center mb-6 text-xl">
+                        <i class="fas fa-dna"></i>
+                    </div>
+                    <h4 class="font-extrabold text-xl mb-4">BMT & Gene</h4>
+                    <ul class="text-slate-600 space-y-3 text-sm">
+                        <li><i class="fas fa-check text-blue-500 mr-2"></i>Bone Marrow Transplant</li>
+                        <li><i class="fas fa-check text-blue-500 mr-2"></i>CAR-T Cell Therapy</li>
+                        <li><i class="fas fa-check text-blue-500 mr-2"></i>Gene Therapy Solutions</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow">
+                    <div class="w-12 h-12 bg-purple-50 text-purple-600 rounded-xl flex items-center justify-center mb-6 text-xl">
+                        <i class="fas fa-tint"></i>
+                    </div>
+                    <h4 class="font-extrabold text-xl mb-4">Hematology</h4>
+                    <ul class="text-slate-600 space-y-3 text-sm">
+                        <li><i class="fas fa-check text-purple-500 mr-2"></i>Leukaemia Management</li>
+                        <li><i class="fas fa-check text-purple-500 mr-2"></i>Lymphoma Treatment</li>
+                        <li><i class="fas fa-check text-purple-500 mr-2"></i>Multiple Myeloma Care</li>
+                    </ul>
+                </div>
             </div>
-            <div class="bg-white p-6 rounded-2xl shadow-sm border-l-8 border-blue-800">
-                <h4 class="font-bold text-xl text-blue-800 mb-1">Ahmedabad (Navrangpura)</h4>
-                <p class="text-gray-500 mb-3"><i class="fas fa-clock mr-2"></i>10:00 AM - 2:00 PM</p>
-                <button class="text-sm font-bold text-blue-800 uppercase tracking-widest">Get Directions →</button>
-            </div>
-        </div>
+        </section>
+
+        <section class="bg-slate-900 text-white rounded-[3rem] p-12 mb-20 text-center">
+            <h3 class="text-emerald-400 font-bold uppercase tracking-widest text-sm mb-4">Affiliated With</h3>
+            <p class="text-2xl font-light opacity-90 mb-8 max-w-2xl mx-auto">
+                Practicing with <span class="font-bold border-b-2 border-emerald-500 text-white">HOC (part of MOC)</span> 
+                along with various leading private and government medical institutes.
+            </p>
+        </section>
 
     </main>
 
-    <footer class="text-center py-10 text-gray-400 text-sm">
-        <p>© 2026 Dr. Sanket Shah. All rights reserved.</p>
+    <footer class="bg-white border-t border-slate-100 py-12 text-center px-6">
+        <p class="text-slate-400 text-xs font-bold uppercase tracking-widest">© 2026 Dr. Sanket Shah • Gold Medalist Medical Oncology</p>
     </footer>
 
 </body>
