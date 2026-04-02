@@ -6,6 +6,7 @@
     <title>Dr. Sanket Shah | HOC Oncology & BMT</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap');
         body { font-family: 'Plus+Jakarta+Sans', sans-serif; background-color: #f8fafc; scroll-behavior: smooth; }
@@ -15,6 +16,9 @@
         .glass-card:hover .sub-menu { display: block; }
         @keyframes fadeIn { from { opacity: 0; transform: translateY(5px); } to { opacity: 1; transform: translateY(0); } }
         .map-frame { width: 100%; height: 220px; border-radius: 1.5rem; border: 1px solid #e2e8f0; margin-top: 15px; }
+        /* Shrink Video Container */
+        .video-container { max-width: 600px; margin: 0 auto; }
+        .swiper-button-next, .swiper-button-prev { color: #0d9488 !important; scale: 0.7; }
     </style>
 </head>
 <body class="text-slate-900 pb-20">
@@ -56,27 +60,43 @@
             </div>
         </div>
 
-        <div class="max-w-2xl mx-auto mb-20">
-            <div class="bg-white p-4 rounded-[2.5rem] shadow-2xl">
-                <video controls class="w-full rounded-[1.8rem]">
-                    <source src="assets/video1.mp4" type="video/mp4">
-                </video>
+        <div class="mb-20">
+            <h2 class="text-center text-2xl font-black text-emerald-950 uppercase mb-8 tracking-widest italic">Empowering Patients: Knowledge is Cure</h2>
+            <div class="video-container">
+                <div class="swiper videoSwiper rounded-[2.5rem] shadow-2xl border-4 border-white overflow-hidden bg-black">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <video controls class="w-full aspect-video"><source src="assets/video1.mp4" type="video/mp4"></video>
+                        </div>
+                        <div class="swiper-slide">
+                            <video controls class="w-full aspect-video"><source src="assets/video2.mp4" type="video/mp4"></video>
+                        </div>
+                        <div class="swiper-slide">
+                            <video controls class="w-full aspect-video"><source src="assets/video3.mp4" type="video/mp4"></video>
+                        </div>
+                        <div class="swiper-slide">
+                            <video controls class="w-full aspect-video"><source src="assets/video4.mp4" type="video/mp4"></video>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+                <p class="text-center mt-4 text-slate-400 text-[10px] font-bold uppercase tracking-[0.2em]">Swipe or use arrows to view all educational videos</p>
             </div>
-            <p class="text-center mt-6 text-slate-400 text-xs font-bold uppercase tracking-widest italic">Clinical Insights & Patient Education</p>
         </div>
 
         <div class="mb-20">
-            <h2 class="text-center text-3xl font-black text-emerald-950 uppercase mb-12 tracking-widest">Consultation Hubs</h2>
+            <h2 class="text-center text-3xl font-black text-emerald-950 uppercase mb-12 tracking-widest underline decoration-yellow-400">Consultation Hubs</h2>
             <div class="grid md:grid-cols-2 gap-8 text-center">
                 <div class="bg-white p-8 rounded-[3rem] shadow-lg border border-slate-100">
                     <h4 class="font-black text-xl text-slate-900 uppercase mb-4">HOC Navrangpura</h4>
                     <a href="tel:+919099007706" class="bg-slate-900 text-white px-6 py-3 rounded-xl font-black block text-xs tracking-widest uppercase mb-4 hover:bg-slate-700 transition">Call 9099007706</a>
-                    <iframe class="map-frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.6965158226075!2d72.5623063!3d23.0349479!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e84f500000001%3A0xb36b2f7035f8d95!2sHemato%20Oncology%20Clinic!5e0!3m2!1sen!2sin!4v1712060000000" allowfullscreen="" loading="lazy"></iframe>
+                    <iframe class="map-frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.5834241775796!2d72.5615714!3d23.0390554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e848aba5bd449%3A0x4f607d1fd8100707!2sHemato%20Oncology%20Clinic%20(HOC)!5e0!3m2!1sen!2sin!4v17100000000016" allowfullscreen="" loading="lazy"></iframe>
                 </div>
                 <div class="bg-white p-8 rounded-[3rem] shadow-lg border border-slate-100">
                     <h4 class="font-black text-xl text-emerald-900 uppercase mb-4">HOC Bopal</h4>
                     <a href="tel:+917069001072" class="bg-emerald-700 text-white px-6 py-3 rounded-xl font-black block text-xs tracking-widest uppercase mb-4 hover:bg-emerald-600 transition">Call 7069001072</a>
-                    <iframe class="map-frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.8601449830883!2d72.4578502!3d23.0288812!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e9b757e757e75%3A0x6b6b6b6b6b6b6b6b!2sHOC%20Vedanta%20Bopal!5e0!3m2!1sen!2sin!4v1712060000000" allowfullscreen="" loading="lazy"></iframe>
+                    <iframe class="map-frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.5834241775796!2d72.5615714!3d23.0390554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e848aba5bd449%3A0x4f607d1fd8100707!2sHemato%20Oncology%20Clinic%20(HOC)!5e0!3m2!1sen!2sin!4v17100000000017" allowfullscreen="" loading="lazy"></iframe>
                 </div>
             </div>
         </div>
@@ -108,8 +128,8 @@
             </div>
             
             <div class="flex flex-col md:flex-row justify-center gap-4">
-                <a href="https://g.page/r/CbXf-DUwL2uzEAE/review" target="_blank" class="bg-white border border-slate-200 text-slate-700 px-8 py-3 rounded-full font-black shadow-sm hover:shadow-md transition uppercase text-[10px] tracking-widest">See More Reviews</a>
-                <a href="https://search.google.com/local/writereview?placeid=ChIJdX51fnmbfjkRuzEAL2u_Xf" target="_blank" class="bg-white border border-slate-200 text-slate-700 px-8 py-3 rounded-full font-black shadow-sm hover:shadow-md transition uppercase text-[10px] tracking-widest">See More Reviews</a>
+                <a href="https://g.page/r/CbXf-DUwL2uzEAE/review" target="_blank" class="bg-white border border-slate-200 text-slate-700 px-8 py-3 rounded-full font-black shadow-sm hover:shadow-md transition uppercase text-[10px] tracking-widest text-center">See More Reviews</a>
+                <a href="https://search.google.com/local/writereview?placeid=ChIJdX51fnmbfjkRuzEAL2u_Xf" target="_blank" class="bg-white border border-slate-200 text-slate-700 px-8 py-3 rounded-full font-black shadow-sm hover:shadow-md transition uppercase text-[10px] tracking-widest text-center">See More Reviews</a>
             </div>
         </div>
 
@@ -125,5 +145,12 @@
         HOC Ahmedabad • Bone Marrow & Cancer Specialist
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".videoSwiper", { 
+            navigation: { nextEl: ".swiper-button-next", prevEl: ".swiper-button-prev" },
+            loop: true 
+        });
+    </script>
 </body>
 </html>
